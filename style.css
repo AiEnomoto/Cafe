@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  line-height: 28px;
+  color: #665C4B;
+  background-color: #fff;
+}
+
+
+.container{
+  max-width: 1100px;
+  margin:auto;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+/*  navbar component */
+#navbar {
+  background: #E7D0A9 ;
+  color: #665C4B;
+  overflow: auto;
+}    
+#navbar a {
+  font-size: 20px;
+  color: #665C4B;
+  text-decoration: none;
+}
+#navbar h1 {
+  float: left;
+  padding: 10px;
+  margin: 0;
+}
+#navbar h1 img {
+    width: 70px;
+  }
+#navbar ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+#navbar ul li {
+  float: left;      
+}
+#navbar ul li a {
+  display: block;
+  padding: 30px;
+}
+#navbar ul li a.current,
+#navbar ul li a:hover {
+  background-color: #665C4B ;
+  color: #E7D0A9;
+}
+
+
+/* hero */
+#hero {
+  background: url('design_img/coffee1.jpg') no-repeat center center/cover;
+  height: 500px;
+  color: white;
+}
+#hero .hero-content h1 {
+  font-size: 60px;
+  line-height: 1.0em;
+}
+#hero .hero-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+#hero a{
+  text-decoration: none;
+  font-size: 20px;
+}
+.text-center {
+  display: block;
+  text-align: center;
+}
+.text-lead {
+  font-size: 20px;
+}
+.text-heading {
+  font-size: 40px;
+}
+
+/*like a hero*/
+#image_home {
+  height: 600px;
+  background: url('design_img/coffee2.jpg') no-repeat center center/cover;
+  padding-top: 100px;
+}
+#image_home h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+#image_about {
+  height: 600px;
+  background: url('design_img/coffee4.jpg') no-repeat center center/cover;
+  padding-top: 100px;
+}
+#image_about h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+#image_contact {
+  height: 200px;
+  background: url('design_img/yazirusi.avif') no-repeat center center/cover;
+  padding-top: 100px;
+}
+#image_contact h2 {
+  color: #665C4B;
+  text-align: center;
+  padding-bottom: 40px;
+  float: left;
+}
+#image_contact p{
+  color: #665C4B;
+  text-align: center;
+  padding-bottom: 30px;
+  float: right;
+}
+
+
+/*Cafe Menu*/
+img {
+	width: 100%;
+	vertical-align: bottom;
+}
+/* ここからカードレイアウトのスタイリング */
+/* PC　3カラム */
+.card_container {
+	display: flex;
+	flex-wrap: wrap;
+	margin:auto;
+	padding: auto;
+  background-color: #fff;
+}
+.card_itemWrapper {
+	width:30px;
+	margin: 15px;
+}
+.card_item {
+  width:300px;
+	outline: 1px solid #665C4B;
+	font-size: 1.5vw;
+  margin:15px;
+  background-color: #E7D0A9;
+}
+
+/* タブレット　2カラム 
+@media screen and (max-width: 1024px) {
+	.bl_media_itemWrapper {
+		width: calc(100% / 2 - 30px);
+	}
+}
+/* スマホ 1カラム
+@media screen and (max-width: 599px) {
+	.bl_media_itemWrapper {
+		width: calc(100% / 1 - 30px);
+	}
+}
+*/
+
+/*location card*/
+.loc_container {
+	display: flex;
+	flex-wrap: wrap;
+	margin:auto;
+	padding: auto;
+  background-color: #fff;
+}
+.loc_itemWrapper {
+	width:30px;
+	margin: 15px;
+}
+.loc_item {
+  width:300px;
+	font-size: 1.5vw;
+  margin:15px;
+}
+
+/* form component */
+
+.text-heading {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* CONTACT FORM SECTION */
+#contact-form{
+  color: #665C4B;
+  margin:auto;
+  width:500px;
+}
+
+#contact-form .input-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,  
+#contact-form textarea {
+  width: 100%;
+  padding:10px;
+  border: 1px #DDDDDD solid;
+}
+
+#contact-form select,  
+#contact-form textarea {
+  width: 100%;
+  padding:10px;
+  border: 1px #DDDDDD solid;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+#contact-form input:focus, 
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #E7D0A9;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  background: #E7D0A9;
+  color: #665C4B;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  text-decoration-line: none;
+}
+
+.btn:hover {
+  background: #E7D0A9;
+  color: #665C4B;
+}
+
+/* footer section */
+#footer {
+  background-color: #E7D0A9 ;
+  color: #665C4B;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* MENU section */
+.menu .item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* 点線 */
+.menu .item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  width: 100%;
+  border-bottom: dotted 2px #aaa;
+}
+
+.menu .item .name,
+.menu .item .price {
+  display: inline-block;
+  /* 周りの背景色と同色にします */
+  background-color: #fff; 
+}
+
+.menu .item .name {
+  padding-right: 5px;
+}
+
+.menu .item .price {
+  padding-left: 5px;
+}

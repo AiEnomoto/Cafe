@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="design_img/logo.png">
+  <title>Cafe +met | contact</title>
+</head>
+<body>
+  <header>
+    <!-- Div Section 1: Navbar -->
+    <nav id="navbar">
+      <div class="container nx-flex">
+        <h1>
+          <img src="design_img/logo.png" alt="logo">
+        </h1>
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./coffee.html">Coffee</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html" class="current">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!--like a hero-->
+  <section id="image_contact" class="py-3">
+    <div class="container">
+      <h2>Help Center</h2>
+      <p>Let's gather some details</p>
+      <p>A member of our support staff will respond as soon as possible</p>
+    </div>
+  </section>
+
+  <!-- form -->
+  <section id="contact-form" class="py-1">
+    <div class="container">
+     <h1 class="text-heading"><span class="text-primary">Contact Form</h1>
+     <form action="#">
+      <!-- INPUT GROUP 1: EMAIL -->
+      <div class="input-group">
+        <label for="email">Your email address</label>
+        <input type="email" id="email" placeholder="mail@gmail.com">
+     </div>
+        <!-- INPUT GROUP 2: NAME -->
+       <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Taylor Swift">
+        </div>
+        
+        <!-- INPUT GROUP 2: LIST -->
+        <div class="input-group">
+          <label for="list">What can we help you with?</label>
+          <select type="hidden" id="list" name="interest_list">
+            <option value="default" selected disabled> - </option>
+            <option value="Online">Online order</option>
+            <option value="General">General question</option>
+            <option value="Product">Product question</option>
+            <option value="Visit">Cafe visit</option>
+            <option value="Issue">Website issue</option>
+          </select>
+        </div>
+
+        <!-- INPUT GROUP 3: MESSAGE -->
+        <div class="input-group">
+          <label for="message">Description</label>
+          <textarea id="message" placeholder="You can write anythings"></textarea>
+        </div>
+        <!-- INPUT 4: SUBMIT BUTTON -->
+        <button type="submit" class="btn" aria-label="Submit form">Submit</button>
+      </form>
+   </div>
+ </section>
+
+ <!-- Div Section 4: Footer -->
+ <footer id="footer">
+  <div class="container text-center">
+    <h4>Hokkaido Ryokan &copy; 2024 unsplash</h4>
+  </div>
+</footer>
+
+
+  
+</body>
+</html>
